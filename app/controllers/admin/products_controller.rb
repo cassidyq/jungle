@@ -1,4 +1,4 @@
-class Admin::ProductsController < ApplicationController
+class Admin::ProductsController < Admin::AdminMainController
 
   def index
     @products = Product.order(id: :desc).all
