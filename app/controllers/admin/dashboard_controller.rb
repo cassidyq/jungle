@@ -1,4 +1,4 @@
-class Admin::DashboardController < ApplicationController
+class Admin::DashboardController < Admin::AdminMainController
   
   def show
     @products_count = Product.all().count(:name)

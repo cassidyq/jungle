@@ -1,4 +1,4 @@
-class Admin::CategoriesController < ApplicationController
+class Admin::CategoriesController < Admin::AdminMainController
   def index
     @categories = Category.all
     @count = Product.group(:category_id).count
